@@ -1,0 +1,15 @@
+CREATE TABLE TODO
+(
+    TODO_ID           UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    TITLE             VARCHAR(255) NOT NULL,
+    DUE_DATE          DATE,
+    EXECUTION_DATE    DATE,
+    PRIORITY          VARCHAR(50),
+    STATUS            VARCHAR(50),
+    HIGHLIGHT         BOOLEAN,
+    REGISTRATION_DATE DATE,
+    UPDATE_AT         DATE,
+    ACTIVE            BOOLEAN,
+    USER_ID           UUID,
+    CONSTRAINT FK_USER_ID FOREIGN KEY (USER_ID) REFERENCES _USER(USER_ID)
+);

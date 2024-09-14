@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    image: postgres:16
+    restart: always
+    container_name: db_lottus
+    environment:
+      - POSTGRES_DB=
+      - POSTGRES_USER=
+      - POSTGRES_PASSWORD=
+    volumes:
+      - ./db_data:/var/lib/postgresql/data
+    ports:
+      - 5439:5432
+
+volumes:
+  db_data:
