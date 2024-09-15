@@ -54,8 +54,6 @@ $ docker-copose up
 
 # Ela inciará na porta:8780 - acesse o swagger http://localhost:8780/swagger-ui/index.html
 
-# Se preferir, utilize essa collection para o postman
-# https://api.postman.com/collections/14743252-7e86fd01-f5ab-4046-a4e7-7b300252ec9c?access_key=PMAT-01J7SAB35XFK4NWP0H9ZYFRY60
 
 ```
 
